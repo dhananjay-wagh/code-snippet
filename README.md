@@ -17,3 +17,9 @@ A simple Node.js + HTML/CSS/JavaScript project that demonstrates a basic authent
 - JavaScript
 
 ## Project Structure
+public/
+├── index.html
+├── login.html
+├── dashboard.html
+├── style.css
+└── script.js
