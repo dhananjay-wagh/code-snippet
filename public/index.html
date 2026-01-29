@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasySnippet - Your Personal Code Vault</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">&lt;/&gt;</span> EASYSNIPPET
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it Works</a></li>
+                <li><a href="#snippets">Snippets</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+
+            <div class="nav-buttons">
+                <a href="login.html" class="btn-text">Log In</a>
+                <a href="login.html" class="btn-primary">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section" id="home">
+        <div class="container hero-container">
+            
+            <div class="hero-badge">Your personal Code vault</div>
+            
+            <h1>Stop Rewriting <span class="highlight-blue">Start Reusing</span></h1>
+            
+            <p class="hero-subtext">
+                Your personal library of code, always one click away. 
+                Save snippets, organize with tags, and sync across devices.
+            </p>
+            
+            <a href="#" class="btn-large">Sign up for free</a>
+
+            <div class="hero-image-wrapper">
+                <div class="code-window">
+                    <div class="window-header">
+                        <div class="dot red"></div>
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                        <span class="filename">snippet.js</span>
+                    </div>
+                    <div class="window-body">
+                        <pre><code><span class="kwd">const</span> <span class="func">saveSnippet</span> = (<span class="arg">code</span>) => {
+  <span class="kwd">if</span> (!code) <span class="kwd">return</span>;
+  
+  <span class="comment">// EasySnippet magic happens here</span>
+  database.<span class="func">push</span>({
+    id: <span class="num">101</span>,
+    language: <span class="str">'javascript'</span>,
+    content: code
+  });
+  
+  console.<span class="func">log</span>(<span class="str">"Snippet Saved!"</span>);
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+
+    <section id="features" class="section-gray">
+        <div class="container split-layout">
+            
+            <div class="text-content">
+                <div class="section-label">Features</div>
+                <h2>Built for <span class="highlight-blue">Efficiency</span></h2>
+                <p class="section-desc">Everything you need to manage your code snippets without the clutter.</p>
+                
+                <ul class="feature-list">
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Instant Search & Filtering</strong>
+                            <p>Find any snippet in milliseconds using keywords or tags.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Multi-language Support</strong>
+                            <p>Syntax highlighting for JS, Python, HTML, CSS, and 50+ others.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Smart Tagging</strong>
+                            <p>Organize snippets your way. Group by project, language, or utility.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="check-icon">✓</span>
+                        <div>
+                            <strong>Cloud Sync</strong>
+                            <p>Access your library from your laptop, tablet, or phone.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="image-content">
+                <div class="feature-card-mockup">
+                    <div class="mockup-header">
+                        <div class="search-bar-mock">🔍 Search snippets...</div>
+                    </div>
+                    <div class="mockup-list">
+                        <div class="mock-item active">
+                            <span class="dot yellow"></span> API Fetch Helper <span class="tag">JS</span>
+                        </div>
+                        <div class="mock-item">
+                            <span class="dot blue"></span> Flexbox Center <span class="tag">CSS</span>
+                        </div>
+                        <div class="mock-item">
+                            <span class="dot green"></span> Python Dict Merge <span class="tag">PY</span>
+                        </div>
+                        <div class="mock-item">
+                            <span class="dot purple"></span> React UseEffect <span class="tag">JSX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="how-it-works" class="section-white">
+        <div class="container split-layout reverse">
+            
+            <div class="image-content">
+                 <div class="step-card-mockup">
+                    <div class="step-box">
+                        <div class="step-number">1</div>
+                        <div>Paste your Code</div>
+                    </div>
+                    <div class="arrow-down">↓</div>
+                    <div class="step-box">
+                        <div class="step-number">2</div>
+                        <div>Add Tags & Save</div>
+                    </div>
+                    <div class="arrow-down">↓</div>
+                    <div class="step-box active-step">
+                        <div class="step-number">3</div>
+                        <div>Copy & Reuse</div>
+                    </div>
+                 </div>
+            </div>
+
+            <div class="text-content">
+                <div class="section-label">Workflow</div>
+                <h2>How it <span class="highlight-blue">Works</span></h2>
+                <p class="section-desc">Save your code in seconds, not minutes. No complex setups.</p>
+
+                <div class="steps-list">
+                    <div class="step-item">
+                        <h3>1. Create</h3>
+                        <p>Paste your code into the editor. We auto-detect the language.</p>
+                    </div>
+                    <div class="step-item">
+                        <h3>2. Organize</h3>
+                        <p>Add tags like #auth or #ui to keep things tidy.</p>
+                    </div>
+                    <div class="step-item">
+                        <h3>3. Deploy</h3>
+                        <p>Grab your snippet with one click whenever you need it.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="snippets" class="section-white">
+        <div class="container">
+            <div class="section-header-center">
+                <div class="section-label">Library</div>
+                <h2>Explore <span class="highlight-blue">Snippets</span></h2>
+                <p class="section-desc center-desc">A sneak peek at how your code vault will look.</p>
+            </div>
+
+            <div class="snippets-grid">
+                <div class="snippet-card">
+                    <div class="card-header">
+                        <span class="lang-tag js">JS</span>
+                        <span class="card-title">Auth Middleware</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code><span class="kwd">const</span> auth = (req, res) => {
+  <span class="kwd">const</span> token = req.header;
+  <span class="kwd">if</span> (!token) <span class="kwd">return</span> 401;
+  next();
+};</code></pre>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tag">#backend</span>
+                        <span class="copy-btn">Copy</span>
+                    </div>
+                </div>
+
+                <div class="snippet-card">
+                    <div class="card-header">
+                        <span class="lang-tag css">CSS</span>
+                        <span class="card-title">Neon Button Glow</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code>.btn-neon {
+  box-shadow: 0 0 10px #0f0;
+  text-shadow: 0 0 5px #fff;
+  transition: 0.3s;
+}</code></pre>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tag">#ui</span>
+                        <span class="copy-btn">Copy</span>
+                    </div>
+                </div>
+
+                <div class="snippet-card">
+                    <div class="card-header">
+                        <span class="lang-tag py">PY</span>
+                        <span class="card-title">Pandas CSV Read</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code><span class="kwd">import</span> pandas <span class="kwd">as</span> pd
+
+df = pd.read_csv(<span class="str">'data.csv'</span>)
+print(df.head())</code></pre>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tag">#data</span>
+                        <span class="copy-btn">Copy</span>
+                    </div>
+                </div>
+
+                 <div class="snippet-card">
+                    <div class="card-header">
+                        <span class="lang-tag html">HTML</span>
+                        <span class="card-title">Boilerplate 5</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+ &lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+ &lt;/head&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                    <div class="card-footer">
+                        <span class="tag">#starter</span>
+                        <span class="copy-btn">Copy</span>
+                    </div>
+                </div>
+
+                <div class="snippet-card blur-card">
+                    <div class="lock-overlay">
+                        <span>🔒 Sign up to see more</span>
+                    </div>
+                    <div class="card-header">
+                        <span class="lang-tag js">JS</span>
+                        <span class="card-title">React Hook Form</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code>const { register } = useForm();
+// Hidden content
+// Hidden content</code></pre>
+                    </div>
+                </div>
+                 <div class="snippet-card blur-card">
+                    <div class="lock-overlay">
+                        <span>🔒 Sign up to see more</span>
+                    </div>
+                    <div class="card-header">
+                        <span class="lang-tag css">SQL</span>
+                        <span class="card-title">User Table Query</span>
+                    </div>
+                    <div class="card-body">
+                        <pre><code>SELECT * FROM users
+WHERE id = 1;</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-gray">
+        <div class="container split-layout">
+            
+            <div class="text-content">
+                <div class="section-label">Our Mission</div>
+                <h2>Built by Developers, <br><span class="highlight-blue">For Developers</span></h2>
+                <p class="section-desc">
+                    We noticed we were rewriting the same helper functions for every project. 
+                    EasySnippet was born out of the need to stop wasting time and start coding faster.
+                </p>
+                
+                <div class="social-links">
+                    <a href="#" class="social-btn">Instagram</a>
+                    <a href="#" class="social-btn">Facebook</a>
+                    <a href="#" class="social-btn">X (Twitter)</a> <a href="#" class="social-btn">LinkedIn</a>
+                </div>
+            </div>
+
+            <div class="image-content">
+                <div class="about-image-placeholder">
+                    <span>Team / Office Photo</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">EasySnippet</div>
+            <div class="copyright">© 2025 EasySnippet. All rights reserved.</div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
